@@ -1,0 +1,17 @@
+# config file version
+apiVersion: 1
+
+deleteDatasources:
+  - name: Prometheus
+    orgId: 1
+
+datasources:
+  - name: "Prometheus" # 이 이름을 기준으로 ./grafana/conf/provisioning/dashboards/dashboards.yml에 name 필드와 매핑된다.
+    orgId: 1 # <int> Org id. Default to 1
+    type: prometheus
+    access: proxy
+    url: http://prometheus:9090 # TODO - error! - grafana가 prometheus container에게 요청하는게 아니라(172.로 아이피가 시작) 192.168.x.x로 요청하는 문제가 있어서 프로비저닝이 안됨.
+    basicAuth: false
+    isDefault: true
+    version: 1
+    editable: true
