@@ -1,5 +1,5 @@
----
-하루 데이터 처리량 10억건 
+# resouces 
+## 1. 하루 데이터 처리량 10억건 
 
 https://www.youtube.com/watch?v=vmpcmhbUl-w&ab_channel=%EA%B0%9C%EB%B0%9C%EB%B0%94%EB%8B%A5
 
@@ -27,3 +27,7 @@ ec2, rds, s3, cloud watch, lambda
    -> Files.Files.getLastModifiedTime이 불필요하게 호출되는거 제거
    -> scale-out으로 물리적인 서버 분리
    -> 분리된 서버를 통합해서 검색할 수 있는 기능 개발
+
+## 2. 우버 real time data pipeline 
+https://www.uber.com/en-KR/blog/real-time-exactly-once-ad-event-processing/
+
